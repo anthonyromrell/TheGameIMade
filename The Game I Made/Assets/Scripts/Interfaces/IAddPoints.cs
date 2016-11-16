@@ -1,7 +1,8 @@
 ﻿
 public interface IAddPoints {
 
-    int points { get; set; }
+    int Points { get; set; }
 
+    int AddPoint();
     void OnTriggerEnter();
 }

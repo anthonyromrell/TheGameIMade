@@ -1,7 +1,4 @@
-﻿using UnityEngine;
-using System.Collections;
-
-public interface IPowerUp {
+﻿public interface IPowerUp {
 
     int power
     {

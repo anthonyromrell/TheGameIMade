@@ -2,9 +2,13 @@
 using System.Collections;
 using System;
 
-public class AmmoPowerUp : MonoBehaviour, IPowerUp, IAddPoints
+public class AmmoPowerUp : MonoBehaviour, IPowerUp, IAddPoints, IAttack
 {
-    public int points
+    public static Action myA;
+
+    public event EventHandler Attack;
+
+    public int Points
     {
         get
         {
@@ -25,13 +29,36 @@ public class AmmoPowerUp : MonoBehaviour, IPowerUp, IAddPoints
         }
     }
 
+    event Action IAttack.Attack
+    {
+        add
+        {
+            throw new NotImplementedException();
+        }
+
+        remove
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public int AddPoint()
+    {
+        throw new NotImplementedException();
+    }
+
     public void OnTriggerEnter()
     {
         throw new NotImplementedException();
     }
 
+    void Cool () {
+
+        print("OK");
+    }
     public void Start()
     {
+        myA = Cool;
         throw new NotImplementedException();
     }
 }
