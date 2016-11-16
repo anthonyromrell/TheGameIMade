@@ -1,15 +1,8 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿
 
-public class IDamage : MonoBehaviour {
+public interface IDamage {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    //This method is required for any class that does damage;
+    void Damage();
+
 }

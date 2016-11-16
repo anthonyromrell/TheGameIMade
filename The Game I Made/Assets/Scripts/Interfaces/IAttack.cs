@@ -1,7 +1,8 @@
-﻿using System;
+﻿
 
 public interface IAttack  {
 
-	event Action Attack; 
-	
+    //Any class that can attack requires this method
+    void Attack();
+    	
 }

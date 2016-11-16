@@ -2,9 +2,9 @@
 using System.Collections;
 using System;
 
-public class AmmoPowerUp : MonoBehaviour, IPowerUp, IAddPoints
+public class SheildsPowerUp : MonoBehaviour, IDamage, IProtect;
 {
-    public int Points
+    public int ProtectionLevel
     {
         get
         {
@@ -17,25 +17,12 @@ public class AmmoPowerUp : MonoBehaviour, IPowerUp, IAddPoints
         }
     }
 
-    public int power
-    {
-        get
-        {
-            throw new NotImplementedException();
-        }
-    }
-
-    public int AddPoint()
+    public void Damage()
     {
         throw new NotImplementedException();
     }
 
-    public void OnTriggerEnter()
-    {
-        throw new NotImplementedException();
-    }
-
-    public void Start()
+    public void Protect()
     {
         throw new NotImplementedException();
     }
